@@ -1,165 +1,293 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../Practice-Projects/assets/Fonts/NeueMachina-Regular.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/NeueMachina-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-body{
-    font-family: monospace,sans-serif;
-    overflow: hidden;
-    background-color: #05547c;
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../Practice-Projects/assets/Fonts/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/NeueMachina-Ultrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-ul{
-    list-style-type: none;
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../Practice-Projects/assets/Fonts/NeueMachina-Light.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/NeueMachina-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-a{
-    text-decoration: none;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-ExtraBold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-header{
-    background-color: #60b4df;
-
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-Bold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-Black.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: staticy;
-    top: 0;
-    /* width: 100%; */
-    z-index: 1;
-    height: 3rem;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-ExtraLight.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 
-.nav-links > ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-Light.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-.nav-link > a{
-    line-height: 3rem;
-    color: #fff;
-    padding: 0.8rem;
-    letter-spacing: 1px;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-Medium.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
-.nav-link > a > i{
-    margin-left: 0.2rem;
-    transition: 0.5s;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-Thin.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 
-.nav-link:hover > a{
-    transform: scale(1.1);
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-Regular.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-.log-sign a{
-    padding: .5rem 1rem;
-    border: 2px solid #60b4df;
-    border-radius: 5px;
-    color: #fff;
+@font-face {
+    font-family: 'Lexend Tera';
+    src: url('../Practice-Projects/assets/Fonts/LexendTera-SemiBold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/LexendTera-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
-.log-sign .transparent{
-    background-color: transpraent;
-
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-ExtraBold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-.nav-link{
-    position: relative;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Black.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
-.dropdown ul{
-    position: relative;  /* connecting with .arrow*/
-}
-/*~~~~~~~~~~             
-  Sub menu        
-~~~~~~~~~~~*/
-
-.dropdown{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 10rem;
-    background-color: #fff;
-
-    transform: translateY(10)px;
-    /* opacity: 0;  should be display none */
-    display: none;
-    transition: .5s;
-    /* pointer-events: none; */
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-BoldItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
-.dropdown-link > a{
-    display: flex;
-    background-color: #fff;
-    color: #3498db;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    align-items: center;
-    justify-content: space-between;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-BlackItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
-.dropdown-link:hover > a{
-    background-color: #3498db;
-    color: #fff;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Bold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-.dropdown-link i{
-    transform: rotate(-90deg);
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
 }
 
-.arrow{
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    top: -5.5px;
-    left: 32px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    cursor: pointer;
-    /* transition: .3s; */
-    z-index: -1;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Italic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
 
-.dropdown-link:first-child:hover ~ .arrow{
-    background-color: #3498db;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
-/* SECOND LAYER & THIRD */
-
-.dropdown-link{
-    position: relative;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-ExtraLight.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 
-.dropdown .second{
-    /* position: absolute; */
-    top: 0;
-    left: 100%;
-    margin-left: 0.8rem;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Light.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-.dropdown .second .arrow{
-    top: 10px;
-    left: -5px;
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-LightItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 
-.nav-link:hover > .dropdown,
-.dropdown-link:hover > .dropdown{
-    transform: translate(0,0);
-    /* opacity: 1; */
-    display: block;
-    /* pointer-events: auto; */
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-SemiBold.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-MediumItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Medium.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-ThinItalic.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../Practice-Projects/assets/Fonts/WorkSans-Thin.woff2') format('woff2'),
+        url('../Practice-Projects/assets/Fonts/WorkSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+:root {
+    --logo-fnt-: 'Neue Machina', sans-serif;
+    --heading-fnt: 'Lexend Tera', sans-serif;
+    --primary-fnt: 'Work Sans', sans-serif;
+
+    --headin-primary-clr: #355E3B;
+    --headin-secondary-clr: #727272;
+    --heading-card-clr: #484848;
+
+    --text-primary-clr: #727272;
+    --text-secondary-clr: #484848;
+    --text-white-clr: #fff;
+
+    --btn-white-bg: #fff;
+    --btn-dark-bg: #355E3B;
+
+    --card-bg: #fff;
+}
+
