@@ -269,10 +269,16 @@
     font-display: swap;
 }
 
-
-
-
 :root {
+    --hero-bg: #f7efe9;
+    --service-bg: #f7f7f7;
+    --about-bg: #f7f1ed;
+    --experience-bg: f2f4f7;
+    --dark-bg: #000;
+    --Question-ans-bg: #f7efe9;
+    --clients-bg: #ecf2f7;
+    --personal-bg: #cbe8f8;
+
     --logo-fnt-: 'Neue Machina', sans-serif;
     --heading-fnt: 'Lexend Tera', sans-serif;
     --primary-fnt: 'Work Sans', sans-serif;
@@ -290,4 +296,43 @@
 
     --card-bg: #fff;
 }
+/*~~~~~~~~~~~~~~ Reset ~~~~~~~~~~~~~~~*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/*~~~~~~~~~~    Header Section  ~~~~~~~~~~~~~*/
+ul li a {
+    text-decoration: none;
+}
+
+.nav-btn a{
+    text-decoration: none;
+}
